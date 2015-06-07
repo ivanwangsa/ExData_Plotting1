@@ -12,5 +12,5 @@ with(clean_data, {
   lines(Time, Sub_metering_2, col=col_sub_2)
   lines(Time, Sub_metering_3, col=col_sub_3)
 })
-legend("topright", lty=c(1,1), col=c(col_sub_1,col_sub_2,col_sub_3), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright", lty=c(1,1,1), col=c(col_sub_1,col_sub_2,col_sub_3), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 dev.off()
