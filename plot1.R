@@ -1,0 +1,5 @@
+source('config.R')
+clean_data <- get_clean_data()
+png(filename = 'plot1.png')
+with(clean_data, hist(Global_active_power, xlab = 'Global Active Power (kilowatts)', ylab = 'Frequency', main = 'Global Active Power', col = '#FF2500'))
+dev.off()
