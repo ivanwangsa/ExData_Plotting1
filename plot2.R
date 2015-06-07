@@ -1,6 +1,6 @@
 source('config.R')
 clean_data <- get_clean_data()
 png(filename = 'plot2.png')
-with(clean_data, plot(Time, Global_active_power, type='n', ylab='Global Active Power (kilowatts)'))
+with(clean_data, plot(Time, Global_active_power, type='n', xlab='', ylab='Global Active Power (kilowatts)'))
 with(clean_data, lines(Time, Global_active_power))
 dev.off()

@@ -2,7 +2,7 @@ source('config.R')
 clean_data <- get_clean_data()
 png(filename = 'plot3.png')
 with(clean_data, {
-  plot(Time, Sub_metering_1, type='n', ylab='Energi sub metering')
+  plot(Time, Sub_metering_1, type='n', xlab='', ylab='Energi sub metering')
 })
 col_sub_1 <- '#000000'
 col_sub_2 <- '#FF2500'
